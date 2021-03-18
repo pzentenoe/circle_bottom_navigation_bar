@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:circle_bottom_navigation_bar/circle_bottom_navigation_bar.dart';
 import 'package:circle_bottom_navigation_bar/widgets/tab_data.dart';
-import 'package:example/screens/alarm_screen.dart';
-import 'package:example/screens/home_screen.dart';
-import 'package:example/screens/search_screen.dart';
-import 'package:example/screens/history_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -116,4 +112,80 @@ List<TabData> getTabsData() {
       fontWeight: FontWeight.bold,
     ),
   ];
+}
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        child: const Center(
+          child: Text(
+            'Home',
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class History extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        child: const Center(
+          child: Text(
+            'History',
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class Search extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        child: const Center(
+          child: Text(
+            'Search',
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class Alarm extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        child: const Center(
+          child: Text(
+            'Alarm ',
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
 }

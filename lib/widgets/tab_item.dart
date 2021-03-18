@@ -6,6 +6,22 @@ const double ALPHA_OFF = 0;
 const double ALPHA_ON = 1;
 const int ANIM_DURATION = 300;
 
+/// Class [TabItem]
+/// [uniqueKey]: unique Key
+/// [selected]: selected tab
+/// [icon]: icon tab
+/// [title]: title
+/// [callbackFunction]: callbackFunction
+/// [textColor]: text color
+/// [iconColor]: icon color
+/// [iconSize]: icon size
+/// [fontSize]: font size
+/// [fontWeight]: font weight
+/// [iconAlpha]: icon alpha
+/// [iconOn]: icon On
+/// [iconOff]: icon Off
+/// [textOff]: text Off
+/// [textOn]: text On
 class TabItem extends StatelessWidget {
   final UniqueKey uniqueKey;
   final bool selected;
@@ -17,9 +33,7 @@ class TabItem extends StatelessWidget {
   final double? iconSize;
   final double? fontSize;
   final FontWeight? fontWeight;
-
   final double iconAlpha = ALPHA_ON;
-
   final double iconOn;
   final double iconOff;
   final double textOff;

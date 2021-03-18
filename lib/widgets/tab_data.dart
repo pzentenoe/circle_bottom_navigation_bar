@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
 
+/// Class [TabData] model for Tab
+/// [icon]: icon
+/// [title]: title
+/// [onClick]: onClick
+/// [iconSize]: iconSize
+/// [fontSize]: fontSize
+/// [fontWeight]: fontWeight
+/// [key]: key
 class TabData {
   final IconData icon;
   final String? title;

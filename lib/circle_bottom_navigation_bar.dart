@@ -8,7 +8,33 @@ import 'package:circle_bottom_navigation_bar/utils/half_painter.dart';
 import 'package:circle_bottom_navigation_bar/widgets/tab_data.dart';
 import 'package:circle_bottom_navigation_bar/widgets/tab_item.dart';
 
+/// Class [CircleBottomNavigationBar]:
+/// [key]: optional widget key reference
+/// [tabs]: list of TabData
+/// [onTabChangedListener]: function for control when change Tab
+/// [initialSelection]: index of selection item
+/// [circleColor]: circle color
+/// [activeIconColor]: active icon color
+/// [inactiveIconColor]: inactive icon color
+/// [textColor]: text color
+/// [barBackgroundColor]: bar background color
+/// [circleSize]: circle size
+/// [barHeight]: bar height
+/// [arcHeight]: arc height
+/// [arcWidth]: arc width
+/// [circleOutline]: circle outline
+/// [shadowAllowance]:  shadowAllowance
+/// [hasElevationShadows]: has elevation shadows
+/// [blurShadowRadius]: blur shadow radius
+/// [iconYAxisSpace]: icon Y Axis Space
+/// [textYAxisSpace]: text Y Axis Space
+/// [itemIconOn]: item Icon On
+/// [itemIconOff]: item Icon Off
+/// [itemTextOn]: item Text On
+/// [itemTextOff]: item Text Off
 class CircleBottomNavigationBar extends StatefulWidget {
+  @override
+  final Key? key;
   final List<TabData> tabs;
   final Function(int position) onTabChangedListener;
   final int? initialSelection;
@@ -25,37 +51,22 @@ class CircleBottomNavigationBar extends StatefulWidget {
   final double shadowAllowance;
   final bool hasElevationShadows;
   final double blurShadowRadius;
-
   final double iconYAxisSpace;
   final double textYAxisSpace;
-
   final double itemIconOn;
   final double itemIconOff;
   final double itemTextOn;
   final double itemTextOff;
 
-  @override
-  final Key? key;
-
   CircleBottomNavigationBar({
+    this.key,
     required this.tabs,
     required this.onTabChangedListener,
     this.initialSelection,
-    this.key,
-
-    /// Circle icon color
     this.circleColor,
-
-    /// Active icon color
     this.inactiveIconColor,
-
-    /// Inactive icon color
     this.activeIconColor,
-
-    /// Text color
     this.textColor,
-
-    /// NavBar Background color
     this.barBackgroundColor,
     this.iconYAxisSpace = -0.5,
     this.textYAxisSpace = 1,
