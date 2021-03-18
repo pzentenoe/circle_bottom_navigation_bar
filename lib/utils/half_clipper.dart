@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// Class [HalfClipper]
 class HalfClipper extends CustomClipper<Rect> {
   @override
   Rect getClip(Size size) {
