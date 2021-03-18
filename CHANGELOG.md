@@ -1,3 +1,6 @@
+# [0.3.0] - Improvement Scores.
+* Improve documentation
+
 # [0.2.0] - Improvement Scores.
 * Improve documentation
 * Improve format code

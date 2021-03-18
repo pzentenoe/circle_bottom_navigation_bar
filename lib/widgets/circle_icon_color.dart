@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 
 import 'tab_item.dart';
 
+/// Class [CircleIconColor]
+/// [circleSize]: circle Size
+/// [circleIconAlpha]: circle Icon Alpha
+/// [circleColor]: circle Color
+/// [activeIcon]: active Icon
+/// [activeIconColor]: active Icon Color
+/// [activeIconSize]: active Icon Size
 class CircleIconColor extends StatelessWidget {
   const CircleIconColor({
     required this.circleSize,
