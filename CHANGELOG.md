@@ -1,3 +1,6 @@
+# [1.0.0] - Stable release.
+* stable release
+
 # [0.4.0] - Improvement Score.
 * Improve documentation
 
